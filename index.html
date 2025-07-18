@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/image.png" alt="NLW Logo esports"> 
+    </header>
+    <main>
+        <section> 
+            <div>
+                <h1 class="title">Assistente de Meta</h1>
+                <p>Pergunte sobre estratégias build para seus jogos</p>
+                
+                <form id="form">
+                    <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" required>
+
+                    <select id="gameSelect">
+                        <option value="selected disabled">Selecione o jogo</option>
+                        <option value="Stardew Valley">Stardew Valley</option>
+                        <option value="The Sims 4 ">The Sims 4 </option>
+                        <option value="Roblox">Roblox</option>
+                        <option value="Hello Kitty Island Adventure">Hello Kitty Island Adventure</option>
+                        <option value="Love Nikki">Love Nikki</option>
+                        <option value="Amor Doce">Amor Doce</option>
+                        <option value="Minecraft">Minecraft</option>
+                    </select>
+
+                        <input id="questionInput" type="text" placeholder="Ex: Ultimas atualizações do jogo... " required>
+
+                        <button id="askButton">Perguntar</button>
+                </form>
+
+                <div id="aiResponse" class="hidden">
+                    <div class="response-content"> 
+                    </div>
+                </div>
+            </div>
+            </section>
+    </main>
+
+<script src ="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
